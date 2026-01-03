@@ -1,0 +1,432 @@
+@article{melladoIdentifyingClinicallyRelevant2025,
+    title = {Identifying Clinically Relevant Findings in Breast Cancer Using
+             Deep Learning and Feature Attribution on Local Views from
+             High-Resolution Mammography},
+    author = {Mellado, Diego and Mayeta-Revilla, Leondry and Sotelo, Julio and
+              Querales, Marvin and Godoy, Eduardo and Lever, Scarlett and Pardo,
+              Fabian and Chabert, Steren and Salas, Rodrigo},
+    date = {2025-09-23},
+    journaltitle = {Frontiers in Oncology},
+    shortjournal = {Front. Oncol.},
+    volume = {15},
+    publisher = {Frontiers},
+    issn = {2234-943X},
+    doi = {10.3389/fonc.2025.1601929},
+    url = {
+           https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1601929/full
+           },
+    urldate = {2025-09-26},
+    abstract = {IntroductionEarly detection of breast cancer via mammography
+                screening is essential to improve survival outcomes, particularly
+                in low-resource settings such as the global south where
+                diagnostic accessibility remains limited. Although Deep Neural
+                Network (DNN) models have demonstrated high accuracy in breast
+                cancer detection, their clinical adoption is impeded by a lack of
+                interpretability.MethodsTo address this challenge, CorRELAX is
+                proposed as an interpretable algorithm designed to quantify the
+                relevance of localized regions within high-resolution
+                mammographic images. CorRELAX evaluates the contribution of
+                partial local information to the model’s global decision-making
+                and computes correlations between intermediate feature
+                representations and predictions to produce global heatmaps for
+                lesion localization. The framework utilizes a DNN trained on
+                multi-scale crops of annotated lesions to effectively capture a
+                spectrum of lesion sizes.ResultsEvaluation on the VinDr-Mammo
+                dataset yielded F1 Scores of 0.8432 for calcifications and 0.7392
+                for masses. Heatmap localization accuracy was assessed using the
+                Pointing Game metric, with CorRELAX achieving average accuracies
+                of 0.6358 based on model predictions and 0.5602 using the
+                correlation maps, indicating robust lesion localization
+                capabilities.DiscussionThese results demonstrate that CorRELAX
+                generates interpretable coarse-segmentation maps that enhance
+                automated lesion detection in mammography. The improved
+                interpretability facilitates clinically reliable decision-making
+                and addresses a critical barrier toward the integration of
+                AI-based methods in breast cancer screening workflows.},
+    langid = {english},
+    keywords = {breast cancer,deep learning,explainable artificial intelligence,
+                feature attribution,mammography,medical image analysis,
+                firstauthor},
+}
+
+@inproceedings{melladoDeepLearningClassifier2023,
+    title = {A {{Deep Learning Classifier Using Sliding Patches For Detection}}
+             of {{Mammographical Findings}}},
+    booktitle = {2023 19th {{International Symposium}} on {{Medical Information
+                 Processing}} and {{Analysis}} ({{SIPAIM}})},
+    author = {Mellado, Diego and Querales, Marvin and Sotelo, Julio and Godoy,
+              Eduardo and Pardo, Fabian and Lever, Scarlett and Chabert, Steren
+              and Salas, Rodrigo},
+    date = {2023-11},
+    pages = {1--5},
+    doi = {10.1109/SIPAIM56729.2023.10373511},
+    url = {https://ieeexplore.ieee.org/abstract/document/10373511},
+    urldate = {2024-01-08},
+    keywords = {firstauthor},
+    abstract = {Mammography is known as one of the best forms to screen possible
+                breast cancer in women, and recently deep learning models have
+                been developed to assist the radiologist in the diagnosis.
+                However, their lack of interpretability has become a significant
+                drawback to their extended use in clinical practice. This paper
+                introduces a novel approach for detecting and localising
+                pathological findings in mammography exams through the use of a
+                EfficientNet-based deep learning model. The model is trained
+                using cropped segments of labelled pathological findings from
+                Vindr Mammography Dataset. Achieving an average F1-score of 72.7
+                \%, and reaching on mass and suspicious calcifications an
+                F1-Score of 79.9 \% and 84.5 \% respectively. Using this
+                classifier we propose a method to visualise from local
+                information the regions of interest where pathological findings
+                could be present on the complete image. Plus, we describe the
+                limitations regarding area coverage of these patches on the
+                model’s capability of generalization and certainty on its
+                predictions, explaining its functionality.},
+    eventtitle = {2023 19th {{International Symposium}} on {{Medical Information
+                  Processing}} and {{Analysis}} ({{SIPAIM}})},
+    file = {/home/caribu/Zotero/storage/C7SVGJUA/Mellado et al. - 2023 - A Deep
+            Learning Classifier Using Sliding Patches For Detection of
+            Mammographical Findings.pdf},
+}
+
+@inproceedings{godoyAutomaticDetectionContextual2024,
+    title = {Automatic Detection of Contextual Laterality in {{Mammography
+             Reports}} Using {{Large Language Models}}},
+    booktitle = {2024 14th {{International Conference}} on {{Pattern Recognition
+                 Systems}} ({{ICPRS}})},
+    author = {Godoy, Eduardo and De Ferrari, Joaquín and Mellado, Diego and
+              Chabert, Steren and Salas, Rodrigo},
+    date = {2024-07-15},
+    pages = {1--6},
+    publisher = {IEEE},
+    location = {London, United Kingdom},
+    doi = {10.1109/ICPRS62101.2024.10677842},
+    url = {https://ieeexplore.ieee.org/document/10677842/},
+    urldate = {2024-09-25},
+    abstract = {This work explores the use of a Large Language Models (LLM) for
+                the automatic identification of laterality spans in mammography
+                reports. Specifically, we assess the performance of three GPT
+                models accessible via OpenAI’s API in categorizing sentences
+                according to their entailment towards either the right or left
+                breast. Our methodology involves employing a framework that takes
+                natural language reports authored by radiologists as input,
+                subsequently generating labels which are refined through
+                straightforward rule-based post-processing methods. We evaluate
+                three prompt types (zero-shot, one-shot and few-shot with 3
+                examples) across the GPT models. Our findings demonstrate that
+                GPT-4o achieves the highest F1 score of 0.77 in the few-shot
+                scenario. Furthermore, we observe notable performance differences
+                and error rates between GPT-3.5-turbo and GPT-4 models,
+                highlighting the superiority of the latter models. Additionally,
+                we find that incorporating one or more task examples in the
+                prompt reduces errors, enhances adherence to instructions and
+                boosts overall performance of the models.},
+    eventtitle = {2024 14th {{International Conference}} on {{Pattern
+                  Recognition Systems}} ({{ICPRS}})},
+    isbn = {979-8-3503-7565-7},
+    langid = {english},
+    file = {/home/caribu/Zotero/storage/MHWH7BAX/Godoy et al. - 2024 - Automatic
+            detection of contextual laterality in Mammography Reports using Large
+            Language Models.pdf},
+}
+
+@article{aguileraAssessmentIntheWildDatasets2023,
+    title = {An {{Assessment}} of {{In-the-Wild Datasets}} for {{Multimodal
+             Emotion Recognition}}},
+    author = {Aguilera, Ana and Mellado, Diego and Rojas, Felipe},
+    date = {2023-01},
+    journaltitle = {Sensors},
+    volume = {23},
+    number = {11},
+    pages = {5184},
+    publisher = {Multidisciplinary Digital Publishing Institute},
+    issn = {1424-8220},
+    doi = {10.3390/s23115184},
+    url = {https://www.mdpi.com/1424-8220/23/11/5184},
+    urldate = {2023-07-04},
+    abstract = {Multimodal emotion recognition implies the use of different
+                resources and techniques for identifying and recognizing human
+                emotions. A variety of data sources such as faces, speeches,
+                voices, texts and others have to be processed simultaneously for
+                this recognition task. However, most of the techniques, which are
+                based mainly on Deep Learning, are trained using datasets
+                designed and built in controlled conditions, making their
+                applicability in real contexts with real conditions more
+                difficult. For this reason, the aim of this work is to assess a
+                set of in-the-wild datasets to show their strengths and
+                weaknesses for multimodal emotion recognition. Four in-the-wild
+                datasets are evaluated: AFEW, SFEW, MELD and AffWild2. A
+                multimodal architecture previously designed is used to perform
+                the evaluation and classical metrics such as accuracy and
+                F1-Score are used to measure performance in training and to
+                validate quantitative results. However, strengths and weaknesses
+                of these datasets for various uses indicate that by themselves
+                they are not appropriate for multimodal recognition due to their
+                original purpose, e.g., face or speech recognition. Therefore, we
+                recommend a combination of multiple datasets in order to obtain
+                better results when new samples are being processed and a good
+                balance in the number of samples by class.},
+    issue = {11},
+    langid = {english},
+    keywords = {Deep Learning,in-the-wild datasets,multimodal emotion
+                recognition},
+    file = {/home/caribu/Zotero/storage/VAL77QIA/Aguilera et al. - 2023 - An
+            Assessment of In-the-Wild Datasets for Multimod.pdf},
+}
+
+@article{godoyHybridFrameworkAutomated2025,
+    title = {Hybrid Framework for Automated Generation of Mammography Radiology
+             Reports},
+    author = {Godoy, Eduardo and Mellado, Diego and family=Ferrari,
+              given=Joaquin, prefix=de, useprefix=true and Querales, Marvin and
+              Saez, Alex and Chabert, Steren and Parra, Denis and Salas, Rodrigo},
+    date = {2025},
+    journaltitle = {Computational and Structural Biotechnology Journal},
+    volume = {27},
+    pages = {3229--3239},
+    issn = {2001-0370},
+    doi = {10.1016/j.csbj.2025.07.018},
+    url = {https://www.sciencedirect.com/science/article/pii/S200103702500282X},
+    abstract = {Breast cancer remains a significant health concern for women at
+                various stages of life, impacting both productivity and
+                reproductive health. Recent advancements in deep learning (DL)
+                have enabled substantial progress in the automation of
+                radiological reports, offering potential support to radiologists
+                and streamlining examination processes. This study introduces a
+                framework for automated clinical text generation aimed at
+                assisting radiologists in mammography examinations. Rather than
+                replacing medical expertise, the system provides pre-processed
+                evidence and automatic diagnostic suggestions for radiologist
+                validation. The framework leverages an encoder–decoder
+                architecture for natural language generation (NLG) models,
+                trained and fine-tuned on a corpus of Spanish radiological text.
+                Additionally, we incorporate an image intensity enhancement
+                technique to address the issue of image quality variability and
+                assess its impact on report generation outcomes. A comparative
+                analysis using NLG metrics is conducted to identify the optimal
+                feature extraction method. Furthermore, named entity recognition
+                (NER) techniques are employed to extract key clinical concepts
+                and automate precision evaluations. Our results demonstrate that
+                the proposed framework could be a solid starting point for
+                systematizing and implementing automated clinical report
+                generation based on medical images.},
+    keywords = {Clinic text,Deep learning,Image processing,Mammography medical
+                imaging,Multimodal generative AI,NLP,Radiology report generation},
+    file = {/home/caribu/Zotero/storage/WB8WT79V/Godoy et al. - 2025 - Hybrid
+            framework for automated generation of mammography radiology
+            reports.pdf},
+}
+
+@article{10.3389/fninf.2025.1550432,
+    title = {Radiomics-Driven Neuro-Fuzzy Framework for Rule Generation to
+             Enhance Explainability in {{MRI-based}} Brain Tumor Segmentation},
+    author = {Mayeta-Revilla, Leondry and Cavieres, Eduardo P. and Salinas,
+              Matías and Mellado, Diego and Ponce, Sebastian and Torres Moyano,
+              Francisco and Chabert, Steren and Querales, Marvin and Sotelo,
+              Julio and Salas, Rodrigo},
+    date = {2025},
+    journaltitle = {Frontiers in Neuroinformatics},
+    volume = {Volume 19 - 2025},
+    issn = {1662-5196},
+    doi = {10.3389/fninf.2025.1550432},
+    url = {
+           https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2025.1550432
+           },
+    abstract = {IntroductionBrain tumors are a leading cause of mortality
+                worldwide, with early and accurate diagnosis being essential for
+                effective treatment. Although Deep Learning (DL) models offer
+                strong performance in tumor detection and segmentation using MRI,
+                their black-box nature hinders clinical adoption due to a lack of
+                interpretability.MethodsWe present a hybrid AI framework that
+                integrates a 3D U-Net Convolutional Neural Network for MRI-based
+                tumor segmentation with radiomic feature extraction.
+                Dimensionality reduction is performed using machine learning, and
+                an Adaptive Neuro-Fuzzy Inference System (ANFIS) is employed to
+                produce interpretable decision rules. Each experiment is
+                constrained to a small set of high-impact radiomic features to
+                enhance clarity and reduce complexity.ResultsThe framework was
+                validated on the BraTS2020 dataset, achieving an average DICE
+                Score of 82.94},
+    keywords = {BT segmentation,Decision rules,deep learning,Explainable
+                artificial intelligence,Magnetic Resonance Imaging,Neuro-fuzzy
+                systems,Radiomics-Driven Neuro-Fuzzy Framework for Brain Tumor
+                Segmentation Radiomics},
+    file = {/home/caribu/Zotero/storage/SVXQVPNS/Mayeta-Revilla et al. - 2025 -
+            Radiomics-driven neuro-fuzzy framework for rule generation to enhance
+            explainability in MRI-based br.pdf},
+}
+
+@online{godoyFrameworkExtractionClinical2024,
+    title = {A {{Framework}} for {{Extraction}} of {{Clinical Information}} from
+             {{Radiological Mammography Reports Using Large Language Models}} and
+             {{Retrieval Augmented Generation}}.},
+    author = {Godoy, Eduardo and family=Ferrari, given=Joaquín, prefix=de,
+              useprefix=false and Lazo, Sofia and Pacheco, Catalina and Mellado,
+              Diego and Saez, Alex and Chabert, Steren and Salas, Rodrigo},
+    date = {2024-09-26},
+    eprinttype = {Research Square},
+    issn = {2693-5015},
+    doi = {10.21203/rs.3.rs-4927320/v1},
+    url = {https://www.researchsquare.com/article/rs-4927320/v1},
+    urldate = {2025-03-11},
+    abstract = {Background: The application of text mining in radiological
+                reports is crucial for many tasks but principally analyzing and
+                projecting trends to enhance diagnostic accuracy. This is
+                especially important in mammography reports, where early
+                detection is crucial. Large language models (LLMs) provide a
+                viable alternative. They can generate accurate results from a
+                limited set of examples compared with the traditional
+                state-of-the-art models.\&amp;nbsp;\&amp;nbsp; Methods: This work
+                presents a framework utilizing a general proposed
+                retrieval-augmented generation (RAG) and large language model LLM
+                to create a replicable model capable of structuring mammography
+                radiology reports and extracting relevant concepts associated
+                with the findings. The resulting model is applied to a real-world
+                scenario, using a dataset of mammography radiology reports
+                provided by a hospital. These reports, written by radiologists,
+                are in free text and Spanish. The application of the designed
+                framework is evaluated across several LLMs, and its results are
+                compared to a conventional and specialized NER-type model based
+                on BERT, using a dataset labeled by radiologists.\&amp;nbsp;
+                Results: \&amp;nbsp;Several models have been implemented and
+                evaluated with the proposed LLM framework. In Named Entity
+                Recognition (NER) tasks using GPT-4, the zero-shot learning
+                scenario achieved an F1-score of 0.80, while the five-shot
+                scenario reached an F1-score of 0.96. This is comparable to the
+                specific-context NER-BERT model, which achieved an F1-score of
+                0.97. Similarly, in Relation Extraction tasks, we achieved an
+                F1-score of 0.93, a task for which a specialized model was not
+                available.\&amp;nbsp; Conclusion: The results demonstrate that
+                large language models (LLMs) can benefit from additional
+                in-prompt examples and achieve results comparable to those of
+                specialized models like NER-BERT. Additionally, this study shows
+                that through a well-defined framework, it is possible to
+                effectively leverage the capabilities of LLMs for specific
+                purposes such as NER and Relation Extraction over clinical text
+                and mammography reports.},
+    pubstate = {prepublished},
+    file = {/home/caribu/Zotero/storage/A8ZXNY9Q/Godoy et al. - 2024 - A
+            Framework for Extraction of Clinical Information from Radiological
+            Mammography Reports Using Large.pdf},
+}
+
+@inproceedings{10.1007/978-3-031-36004-6_73,
+    title = {Torwards Trustworthy Machine Learning Based Systems: {{Evaluating}}
+             Breast Cancer Predictions Interpretability Using Human Centered
+             Machine Learning and {{UX}} Techniques},
+    booktitle = {{{HCI}} International 2023 Posters},
+    author = {Ugalde, Jonathan and Godoy, Eduardo and Mellado, Diego and
+              Cavieres, Eduardo and Carvajal, Bastian and Fernández, Carlos and
+              Illescas, Pamela and Avaria, Rodrigo H. and Díaz, Claudia and
+              Ferreira, Rodrigo and Querales, Marvin and Lever, Scarlett and
+              Sotelo, Julio and Chabert, Steren and Salas, Rodrigo},
+    editor = {Stephanidis, Constantine and Antona, Margherita and Ntoa,
+              Stavroula and Salvendy, Gavriel},
+    date = {2023},
+    pages = {538--545},
+    publisher = {Springer Nature Switzerland},
+    location = {Cham},
+    abstract = {Although the use of Machine Learning techniques has been widely
+                used in the literature in order to predict breast cancer. The
+                focus of these works has been to improve the performance of
+                classification algorithms for greater diagnostic accuracy.
+                However, for these classification models to be used in a real
+                environment, such as a cancer diagnosis assistance system in an
+                oncology institution, in addition to high performance, models
+                must also offer predictions that are easy to understand by
+                radiologists who make the final diagnosis. In this work, we
+                evaluate the level of trust from users in an AI-based system for
+                breast cancer identification. This system uses computer vision
+                and Deep Learning (DL) techniques to classify breast mammography
+                and identify abnormalities associated with lumps or cancer
+                tumors. The evaluation performed in this work focuses on the
+                interpretability of the system and the explanations that are
+                shown to users. To evaluate the interpretability of the model's
+                predictions, AI-based systems evaluation techniques from the
+                Human-Centered Machine Learning (HCML) field were used, as well
+                as classic usability and user experience (UX) techniques.},
+    isbn = {978-3-031-36004-6},
+}
+
+@inproceedings{martinezMultimodalEmotionRecognition2023,
+    title = {Multimodal {{Emotion Recognition Dataset}} in the {{Wild}} ({{
+             MERDWild}})},
+    booktitle = {2023 {{IEEE CHILEAN Conference}} on {{Electrical}}, {{
+                 Electronics Engineering}}, {{Information}} and {{Communication
+                 Technologies}} ({{CHILECON}})},
+    author = {Martínez, Facundo and Aguilera, Ana and Mellado, Diego},
+    date = {2023-12},
+    pages = {1--6},
+    issn = {2832-1537},
+    doi = {10.1109/CHILECON60335.2023.10418672},
+    url = {https://ieeexplore.ieee.org/abstract/document/10418672},
+    urldate = {2025-03-11},
+    abstract = {Multimodal emotion recognition involves identifying human
+                emotions in specific situations using artificial intelligence
+                across multiple modalities. MERDWild, a multimodal emotion
+                recognition dataset, addresses the challenge of unifying,
+                cleaning, and transforming three datasets collected in
+                uncontrolled environments with the aim of integrating and
+                standardizing a database that encompasses three modalities:
+                facial images, audio, and text. A methodology is presented that
+                combines information from these modalities, utilizing
+                �in-the-wild� datasets including AFEW, AffWild2, and MELD.
+                MERDWild consists of 15 873 audio samples, 905 281 facial images,
+                and 15 321 sentences, all of them considered usable quality data.
+                The project outlines the entire process of data cleaning,
+                transformation, normalization, and quality control, resulting in
+                a unified structure for recognizing seven emotions.},
+    eventtitle = {2023 {{IEEE CHILEAN Conference}} on {{Electrical}}, {{
+                  Electronics Engineering}}, {{Information}} and {{Communication
+                  Technologies}} ({{CHILECON}})},
+    keywords = {Artificial intelligence,Cleaning,Databases,Emotion recognition,
+                Emotion Recognition,in-the-wild dataset,Information and
+                communication technology,multimodal sources,Process control,
+                Quality control},
+    file = {/home/caribu/Zotero/storage/7E5F9VQW/10418672.html},
+}
+
+@article{torresPredictingCardiovascularRehabilitation2023,
+    title = {Predicting {{Cardiovascular Rehabilitation}} of {{Patients}} with {
+             {Coronary Artery Disease Using Transfer Feature Learning}}},
+    author = {Torres, Romina and Zurita, Christopher and Mellado, Diego and
+              Nicolis, Orietta and Saavedra, Carolina and Tuesta, Marcelo and
+              Salinas, Matías and Bertini, Ayleen and Pedemonte, Oneglio and
+              Querales, Marvin and Salas, Rodrigo},
+    date = {2023-01},
+    journaltitle = {Diagnostics},
+    volume = {13},
+    number = {3},
+    pages = {508},
+    publisher = {Multidisciplinary Digital Publishing Institute},
+    issn = {2075-4418},
+    doi = {10.3390/diagnostics13030508},
+    url = {https://www.mdpi.com/2075-4418/13/3/508},
+    urldate = {2023-07-04},
+    abstract = {Cardiovascular diseases represent the leading cause of death
+                worldwide. Thus, cardiovascular rehabilitation programs are
+                crucial to mitigate the deaths caused by this condition each year
+                , mainly in patients with coronary artery disease. COVID-19 was
+                not only a challenge in this area but also an opportunity to open
+                remote or hybrid versions of these programs, potentially reducing
+                the number of patients who leave rehabilitation programs due to
+                geographical/time barriers. This paper presents a method for
+                building a cardiovascular rehabilitation prediction model using
+                retrospective and prospective data with different features using
+                stacked machine learning, transfer feature learning, and the
+                joint distribution adaptation tool to address this problem. We
+                illustrate the method over a Chilean rehabilitation center, where
+                the prediction performance results obtained for 10-fold
+                cross-validation achieved error levels with an NMSE of 0.03±0.013
+                and an R2 of 63±19\%, where the best-achieved performance was an
+                error level with a normalized mean squared error of 0.008 and an
+                R2 up to 92\%. The results are encouraging for remote
+                cardiovascular rehabilitation programs because these models could
+                support the prioritization of remote patients needing more help
+                to succeed in the current rehabilitation phase.},
+    issue = {3},
+    langid = {english},
+    keywords = {cardiovascular rehabilitation,joint distribution adaptation,
+                machine learning,transfer feature learning},
+    file = {/home/caribu/Zotero/storage/S3MFN8KT/Torres et al. - 2023 -
+            Predicting Cardiovascular Rehabilitation of Patien.pdf},
+}
