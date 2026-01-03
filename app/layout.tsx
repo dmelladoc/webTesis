@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Biblioteca de Referencias - Diego Mellado,
+  title: "Biblioteca de Referencias - Diego Mellado",
   description: "Gestión de fuentes bibliográficas para investigación, presentaciones y artículos desarrollados sobre cáncer de mama",
   keywords: [
     "referencias bibliográficas",
