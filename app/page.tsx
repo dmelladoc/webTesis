@@ -27,9 +27,7 @@ export default function HomePage() {
             Biblioteca de Referencias
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400">
-            Inteligencia Artificial Explicable para la Detección y
-Análisis de Hallazgos Mamográficos como apoyo al
-Diagnóstico de Cáncer de Mama
+            Inteligencia Artificial Explicable para la Detección y Análisis de Hallazgos Mamográficos como apoyo al Diagnóstico de Cáncer de Mama
           </p>
         </div>
 

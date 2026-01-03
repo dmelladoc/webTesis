@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/webTesis',
+  basePath: process.env.NODE_ENV === 'production' ? '/webTesis' : '',
   images: {
     unoptimized: true,
   },

@@ -11,6 +11,7 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const links = [
+    
     { href: '/referencias', label: 'Referencias de la Investigación', shortLabel: 'Investigación', icon: faFlask },
     { href: '/presentacion', label: 'Referencias de la Presentación', shortLabel: 'Presentación', icon: faChalkboardTeacher },
     { href: '/desarrollo', label: 'Artículos Desarrollados', shortLabel: 'Autor', icon: faUser },
